@@ -1,0 +1,9 @@
+.top-promotion{
+  color: var(--light-black-text);
+  background-color: var(--palette-green);
+  padding: 12px 0;
+  text-align: center;
+  transition: opacity 1s ease-in-out;
+  font-size: .9rem;
+}
+

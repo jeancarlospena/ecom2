@@ -1,0 +1,33 @@
+.products-section{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+    margin-left: -20px;
+  margin-right: -20px;
+  /* justify-content: space-between; */
+
+}
+
+.product-item-padding{
+  /* max-width: 200px; */
+  /* height: 30px; */
+  padding: 20px;
+
+}
+.product-item{
+  width: 25%;
+
+}
+
+.product-img{
+  /* max-height: 300px; */
+  width: 100%;
+
+}
+
+@media (max-width: 950px){
+  .product-item{
+  width: 50%;
+
+}
+}

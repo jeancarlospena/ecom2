@@ -1,0 +1,107 @@
+
+.collection-screen{
+  display: flex;
+  margin-top: 45px;
+}
+
+.collection-screen  .title{
+  padding: 0;
+  width: 100%;
+  margin-left: 50px;
+
+}
+.section-heading{
+  font-size: 2.8rem;
+
+}
+
+.filter-options{
+  color: var(--light-black-text);
+ margin-right: 20px;
+}
+
+
+.cat-section{
+  border: 1px solid var(--light-box-outline);
+  padding: 10px;
+  width: fit-content;
+  width: 190px;
+  margin-top: 50px;
+}
+
+.options-selection > p{
+  margin-top: 12px;
+}
+
+.cat-section input{
+  margin-right: 10px;
+}
+.filter-icon{
+  transform: rotate(90deg);
+  height: 20px;
+  margin-left: 10px;
+  display: none;
+
+}
+
+.rotate-filter-icon{
+  transform: rotate(270deg);
+}
+
+
+.head-filter{
+  display: flex;
+  align-items: center;
+}
+
+.right-collection-section{
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-between; */
+  width: 100%;
+  /* background-color: blue; */
+}
+.right-collection-top{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.right-collection-section select{
+ padding: 0 15px;
+}
+
+
+
+@media(max-width:870px){
+  .hide-section{
+    display: none;
+  }
+  .filter-icon{
+    display: block;
+  }
+
+  .cursor{
+    cursor: pointer;
+  }
+  .collection-screen{
+    margin-top: 20px;
+  flex-direction: column;
+}
+.collection-screen  .title{
+ margin-bottom: 20px;
+  margin-left: 0;
+}
+.right-collection-top{
+margin-top: 20px;
+flex-direction: column;
+align-items: start;
+}
+.right-collection-top > select{
+padding: 15px;
+}
+
+
+}

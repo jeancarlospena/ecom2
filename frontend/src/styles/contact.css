@@ -1,0 +1,45 @@
+.contact-us-info{
+  display: flex;
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.contact-us-info img{
+  object-fit: contain;
+  width: 500px;
+}
+.contact-us-info button{
+  transition: .2s;
+  align-self: flex-start;
+  padding: 15px 20px ;
+  /* background-color: var(--light-black-background); */
+  border: 1px solid var(--dark-box-outline);
+  /* color: var(--dark-white-text); */
+  cursor: pointer;
+  margin-top: 10px;
+  background-color: white;
+  
+}
+.contact-us-info button:hover{
+  
+  color: var(--dark-white-text);
+  color: white;
+  background-color: var(--light-black-background);
+  
+}
+
+.contact-us-details{
+ display: flex;
+ flex-direction: column;
+ margin-left: 50px;
+ align-self: center;
+ /* background-color: blue; */
+ justify-content: space-between;
+ height: 300px;
+}
+
+.contact-title{
+  font-size: 1.2rem;
+  font-weight: bold;
+}

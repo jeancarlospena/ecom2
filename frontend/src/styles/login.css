@@ -1,0 +1,44 @@
+.auth-form{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  margin-top: 50px;
+  width: fit-content;
+}
+
+.auth-form > input{
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 1rem;
+  width: 300px;
+}
+
+
+.auth-heading{
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.forgot-pass{
+  display: flex;
+  justify-content: space-between;
+ width: 100%;
+ margin-top: 5px;
+}
+
+.forgot-pass > p{
+  cursor: pointer;
+}
+
+.auth-button{
+  margin-top: 25px;
+  background-color: var(--light-black-background);
+  border: none;
+  padding: 20px;
+  border-radius: 50px;
+  color: var(--dark-white-text);
+  font-weight: bold;
+  width: 150px;
+  cursor: pointer;
+}

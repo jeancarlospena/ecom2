@@ -1,0 +1,28 @@
+.complete-order{
+  display: flex;
+  padding: 12px 0;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 20px 0;
+    border: 1px solid rgb(220, 220, 220);
+  padding: 20px;
+}
+
+.order-spacer-top{
+ margin-top: 4px;
+}
+
+.order-spacer-2{
+  margin: 12px 0;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.order-spacer-main{
+  margin-bottom: 12px;
+}
+.dropdown-status{
+  padding: 8px;
+}

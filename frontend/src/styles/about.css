@@ -1,0 +1,38 @@
+.about-us-main{
+  display: flex;
+}
+
+.about-us-main > img{
+  object-fit: contain;
+  width: 40%;
+}
+
+.about-us-main-text{
+  padding: 40px;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 370px;
+  width: 600px;
+}
+
+.mission-bold{
+  font-weight: bold;
+}
+
+.choose-us-section{
+  display: flex;
+  margin-bottom: 40px;
+}
+.choose-us-section > div{
+ padding: 30px;
+ border: 1px solid var(--dark-box-outline);
+}
+.choose-us-section > div:not(:last-child){
+ border-right: none;
+}
+.choose-heading{
+  font-weight: bold;
+  margin-bottom: 10px;
+}

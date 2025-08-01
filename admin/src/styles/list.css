@@ -1,0 +1,52 @@
+.row-headings b{
+  padding: 20px;
+  width: 18%;
+}
+.row-headings b:nth-child(2){
+  width: 38%;
+}
+.row-headings b:last-child{
+  text-align: center;
+}
+
+.row-headings{
+  display: flex;
+  width: 100%;
+  background-color: var(--light-outline);
+  margin-top: 10px;
+}
+
+
+.item-row{
+  border: 1px solid rgb(220, 220, 220);
+  /* padding: 10px; */
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+.items-table-wrapper img{
+ width: 150px;
+}
+
+.item-row img{
+
+}
+
+.img-holder{
+  width: 18%;
+  padding: 20px;
+}
+.item-row p{
+  padding: 20px;
+  width: 18%;
+
+}
+.item-row p:nth-child(2){
+    width: 38%;
+
+}
+
+.delete-action{
+  cursor: pointer;
+  text-align: center;
+}
