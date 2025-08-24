@@ -25,29 +25,47 @@ justify-content: space-between;
 .place-order-wrapper{
   display: flex;
   justify-content: space-between;
+  margin-top: 50px;
 }
 
 .payment-section{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  
 }
 
 .payment-methods{
   display: flex;
-  justify-content: space-between;
   width: 100%;
   margin-bottom: 36px;
+  /* border: 1px solid var(--light-box-outline); */
+  border-radius: 5px;
+  font-size: 18px;
+
+  align-items: center;
+  justify-content: center;
 }
+
 
 .paypal-img{
   background-color: #ffc439;
 }
 
 .payment-img{
-  border: 1px solid var(--light-box-outline);
-  padding: 15px 30px;
+  /* padding: 15px 30px; */
   cursor: pointer;
-  border-radius: 5px;
+  /* margin: 0 auto; */
+  margin-left: 20px;
+}
+
+@media (max-width: 1000px){
+  .place-order-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .cart-total-section{
+    margin-top: 50px;
+  }
 }

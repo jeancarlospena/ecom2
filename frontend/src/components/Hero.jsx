@@ -9,6 +9,7 @@ const Hero = () => {
           <img className="hero-img" src="/heroimg.png" alt="hero" />
           <div className="hero-intro">
             <h3 className="hero-message">THE GETAWAY GUIDE</h3>
+            {/* <h3 className="title">THE GETAWAY GUIDE</h3> */}
             <p>Effortless & affordable upgrade for your everyday wardrobe.</p>
             <span className="hero-btn">SHOP NOW</span>
           </div>

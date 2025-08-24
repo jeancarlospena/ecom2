@@ -11,12 +11,43 @@
 
 .swiper-slide  .product-item-padding{
   padding: 0;
+  margin-top: 20px;
+}
+
+
+.best-seller-section{
+  background-color: var(--palette-1);
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.swipe-container{
+  width: 60%;
+  padding: 20px;
+  /* background-color: blue; */
+  margin-right: 0;
+
 }
 
 
 
+@media (max-width: 1200px) {
+  /* .best-seller-section{
+
+    flex-direction: column;
+  
+  } */
+
+  .best-seller-main-img{
+   width: 30%;
+   object-fit: contain;
+  }
 
 
+}
 @media (min-width: 768px) {
   .desktop-only {
     display: block;

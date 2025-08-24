@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-top: 20px;
     margin-left: -20px;
   margin-right: -20px;
   /* justify-content: space-between; */
@@ -15,7 +16,7 @@
 
 }
 .product-item{
-  width: 25%;
+  width: 20%;
 
 }
 
@@ -25,7 +26,17 @@
 
 }
 
+.latest-collection{
+  margin-top: 70px;
+}
+
 @media (max-width: 950px){
+  .product-item{
+  width: 33.1%;
+
+}
+}
+@media (max-width: 500px){
   .product-item{
   width: 50%;
 

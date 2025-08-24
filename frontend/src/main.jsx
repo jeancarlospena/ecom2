@@ -23,6 +23,7 @@ import "./styles/order.css";
 import "./styles/login.css";
 import "./styles/about.css";
 import "./styles/contact.css";
+import "./styles/sectionintro.css";
 
 import ShopContextProvider from "./context/ShopContext.jsx";
 

@@ -1,5 +1,7 @@
 .about-us-main{
   display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
 }
 
 .about-us-main > img{
@@ -35,4 +37,16 @@
 .choose-heading{
   font-weight: bold;
   margin-bottom: 10px;
+}
+
+@media (max-width: 900px){
+  .about-us-main{
+    flex-direction: column;
+  }
+  .about-us-main-text{
+    width: 90%;
+  }
+  .about-us-main > img{
+  margin: 0 auto;
+}
 }

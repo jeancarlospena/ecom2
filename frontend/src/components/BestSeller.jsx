@@ -19,44 +19,55 @@ const BestSeller = () => {
 
   return (
     <div className="best-seller-section">
-      <Title text={"Best sellers."} />
-      <Swiper
-        modules={[Navigation, FreeMode]}
-        // modules={[FreeMode]}
-        freeMode={true}
-        spaceBetween={30}
-        slidesPerView={1.2}
-        navigation={{
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        }}
-        breakpoints={{
-          768: {
-            slidesPerView: 3,
-            spaceBetween: 30,
-          },
-        }}
-      >
-        {bestSeller.map((item, index) => (
-          <SwiperSlide key={index}>
-            {/* <div className="product-card">
+      {bestSeller.length > 0 && (
+        <img
+          className="best-seller-main-img"
+          src={bestSeller[bestSeller.length - 1].image[0]}
+          alt=""
+        />
+      )}
+      <div className="swipe-container">
+        <h2 className="title">BEST SELLERS</h2>
+        <div>
+          <Swiper
+            modules={[Navigation, FreeMode]}
+            // modules={[FreeMode]}
+            freeMode={true}
+            spaceBetween={30}
+            slidesPerView={1.2}
+            navigation={{
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            }}
+            breakpoints={{
+              768: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+              },
+            }}
+          >
+            {bestSeller.map((item, index) => (
+              <SwiperSlide key={index}>
+                {/* <div className="product-card">
               <img src={item.image} alt={item.name} />
               <h4>{item.name}</h4>
               <p>${item.price}</p>
             </div> */}
-            <ProductItem
-              id={item._id}
-              image={item.image}
-              name={item.name}
-              price={item.price}
-            />
-          </SwiperSlide>
-        ))}
+                <ProductItem
+                  id={item._id}
+                  image={item.image}
+                  name={item.name}
+                  price={item.price}
+                />
+              </SwiperSlide>
+            ))}
 
-        {/* Navigation buttons (only visible on desktop) */}
-        <div className="swiper-button-prev desktop-only" />
-        <div className="swiper-button-next desktop-only" />
-      </Swiper>
+            {/* Navigation buttons (only visible on desktop) */}
+            <div className="swiper-button-prev desktop-only" />
+            <div className="swiper-button-next desktop-only" />
+          </Swiper>
+        </div>
+      </div>
     </div>
   );
 };

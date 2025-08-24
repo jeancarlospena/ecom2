@@ -1,5 +1,6 @@
 .navbar{
-  padding:  25px 0 35px;
+  /* padding:  25px 0 35px; */
+  padding:  40px 0 35px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -7,14 +8,14 @@
 }
 
 .header-logo{
-  height: 32px;
+  height: 28px;
   cursor: pointer;
 }
 
 .header-link{
  /* text-decoration: none; */
  /* color: blue; */
- font-size: 1.1rem;
+ font-size: var(--f-sm);
  /* margin-bottom: 2px; */
  text-transform: capitalize;
  /* font-weight: bold; */
@@ -46,12 +47,14 @@ div.header-link:not(:first-child) {
   display: flex;
   flex-direction: row;
   width: 100px;
-  justify-content: space-between;
+  justify-content: flex-end;
+  width: 230px;
 }
 
 .nav-icon{
   height: 25px;
   cursor: pointer;
+  margin-left: 20px;
 }
 
 .nav-icon:not(:first-child){
@@ -62,8 +65,7 @@ div.header-link:not(:first-child) {
   display: block;
   padding: 8px 15px;
   cursor: pointer;
-  font-weight: bold;
- font-size: .9rem;
+  font-size: var(--f-s);
  position: relative;
 
 }
@@ -192,7 +194,7 @@ div.header-link:not(:first-child) {
   .menu-icon{
     display: block;
   }
-  ul.nav-links{
+  ul.nav-links , .nav-icon, .cart-count{
     display: none;
   }
   .navbar-end{
@@ -205,7 +207,7 @@ div.header-link:not(:first-child) {
 @media(max-width: 600px){
   .navbar{
  
-  flex-direction: column;
+  /* flex-direction: column; */
   height: 110px;
 }
 .navbar-end{

@@ -21,16 +21,27 @@ const PlaceOrder = () => {
     products,
   } = useContext(ShopContext);
   const [formData, setFormData] = useState({
-    firstName: "Carlos",
-    lastName: "Pena",
-    email: "carlos@email.com",
-    street: "111",
-    city: "Hawthorne",
-    state: "Texas",
-    zipcode: "00001",
-    country: "US",
-    phone: "9734444444",
+    firstName: "",
+    lastName: "",
+    email: "",
+    street: "",
+    city: "",
+    state: "",
+    zipcode: "",
+    country: "",
+    phone: "",
   });
+  // const [formData, setFormData] = useState({
+  //   firstName: "Carlos",
+  //   lastName: "Pena",
+  //   email: "carlos@email.com",
+  //   street: "111",
+  //   city: "Hawthorne",
+  //   state: "Texas",
+  //   zipcode: "00001",
+  //   country: "US",
+  //   phone: "9734444444",
+  // });
   // const [formData, setFormData] = useState({
   //   firstName: "",
   //   lastName: "",
@@ -185,15 +196,9 @@ const PlaceOrder = () => {
       </div>
       <div className="payment-section">
         <CartTotal />
-        <Title text={"Payment method."} />
         <div className="payment-methods">
+          <p>Pay with</p>
           <img className="payment-img" src={assets.stripe_logo} alt="" />
-          <img
-            onClick={() => navigate("/orders")}
-            className="payment-img paypal-img"
-            src="PayPal.svg"
-            alt=""
-          />
         </div>
         <button className="checkout-button" type="submit">
           Place Order

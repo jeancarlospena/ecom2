@@ -31,7 +31,7 @@ const Cart = () => {
   return (
     <div className="cart-screen-wrapper">
       <div>
-        <Title text={"Your cart."} />
+        <h2 className="page-title">Shopping Cart</h2>
       </div>
       <div>
         {cartData.map((item, index) => {

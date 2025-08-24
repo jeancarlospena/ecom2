@@ -7,7 +7,7 @@ const About = () => {
   return (
     <div>
       <div>
-        <Title text={"About us."} />
+        <h2 className="page-title">About Us</h2>
       </div>
       <div className="about-us-main">
         <img src={assets.about_img} alt="" />
@@ -37,7 +37,8 @@ const About = () => {
         </div>
         <div></div>
       </div>
-      <Title text={"Why choose us?"} />
+      <h2 className="page-title">Why choose us?</h2>
+
       <div className="choose-us-section">
         <div>
           <p className="choose-heading">Quality Assurance:</p>

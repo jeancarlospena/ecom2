@@ -12,7 +12,7 @@
 
 html{
   font-family: sans-serif;
-  font-size: 17px;
+  font-size: 16px;
   --light-outline: rgb(221, 221, 221);
   --dark-text: rgb(49, 49, 49);
 }
@@ -35,5 +35,4 @@ height: calc(100vh);
   padding: 25px 20px ;
   width: 100%;
 }
-
 

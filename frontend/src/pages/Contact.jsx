@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <div>
       <div>
-        <Title text={"Contact us."} />
+        <h2 className="page-title">Contact Us</h2>
       </div>
       <div className="contact-us-info">
         <img src={assets.contact_img} alt="" />

@@ -5,7 +5,7 @@
 .main-hero{
   color: var(--light-black-text);
   display: flex;
-  background-color: var(--palette-muted-green);
+  background-color: var(--palette-1);
   align-items: center;
   cursor: pointer;
   /* justify-content: center; */
@@ -17,8 +17,8 @@
 
 .hero-message{
   margin-bottom: 20px;
-  font-size: 2rem;
-
+  font-weight: 400;
+  font-size: var(--f-l);
 }
 
 .hero-intro{
@@ -32,19 +32,21 @@
 }
 
 .hero-into > p{
-  font-size: 1.4rem;
+  font-size: var(--f-s);
 color: pink
 }
 
 .hero-btn{
   color: var(--light-black-text);
-  background-color: var(--palette-green);
+  background-color: var(--palette-5);
+
   padding: 20px 0;
   width: 70%;
   border: none;
   border-radius: 40px;
   margin-top: 25px;
-  font-size: 1.1rem;
+    font-size: var(--f-md);
+
   text-align: center;
 }
 
